@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'UA';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../assets/fonts/regular.otf"); }
+
+.header {
+  color: #fff; }
+  .header__container {
+    justify-content: space-between;
+    align-items: center; }
+  .header__events {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'UA'; }
+  .header__add {
+    opacity: .5;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-size: 14px;
+    text-transform: capitalize;
+    transition: all .3s; }
+    .header__add:before {
+      content: '';
+      background: url("../../assets/icons/plus.png");
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 10px 0 0; }
+    .header__add:hover {
+      opacity: 1; }
