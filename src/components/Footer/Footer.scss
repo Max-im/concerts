@@ -1,0 +1,157 @@
+.footer{
+  margin: 60px 0;
+  &__container{
+    border-top: 1px solid rgba(255,255,255,.25);
+    justify-content: space-between;
+  }
+  &__item{
+    padding: 15px 0;
+    text-align: center;
+    opacity: .25;
+    flex: 1 1 calc(100% / 6);
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: 100;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all .3s;
+    position: relative;
+    &:hover{
+      opacity: 1;
+      color: #fff;
+    }
+    &_active{
+      font-weight: bold;
+      opacity: 1;
+      &:after{
+        content: '';
+        position: absolute;
+        color: #fff;
+        width: 100%;
+        height: 3px;
+        top: -3px;
+        left: 0;
+        background: #fff;
+      }
+    }
+  }
+
+}
+
+
+
+
+ /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  
+
+
+}
+
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  
+
+
+}
+
+
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.footer{
+  margin: 40px 0;
+  &__item{
+    padding: 10px 0;
+    font-size: 10px;
+    &_active{
+      &:after{
+        height: 2px;
+        top: -2px;
+      }
+    }
+  }
+
+}
+  
+
+}
+
+
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+
+
+}
+
+
+
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+
+
+
+}
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+
+
+}
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+
+
+}
+
+
+
+
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+
+
+}

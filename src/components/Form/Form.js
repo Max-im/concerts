@@ -12,7 +12,7 @@ class Form extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      cityMenuShow: true,
+      cityMenuShow: false,
       currentCity: 'Ивано-франковск'
     }
   }
