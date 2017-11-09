@@ -5,6 +5,7 @@
   src: url("../../assets/fonts/regular.otf"); }
 
 .header {
+  padding: 65px 0 0 0;
   color: #fff; }
   .header__container {
     justify-content: space-between;

@@ -1,0 +1,231 @@
+.form{
+  margin: 30px 0 0 0;
+  &__container{
+    justify-content: space-between;
+  }
+  &__block{
+    font-family: 'Roboto';
+    display: block;
+    padding: 10px 15px;
+    background: #fff;
+    margin: 0 10px 0 0;
+    box-sizing: border-box;
+  }
+  &__search{
+    flex: 1 1 40%;
+    border: none;
+  }
+  &__date{
+    color: #808080;
+    font-size: 12px;
+    flex: 1 1 8%;
+    cursor: pointer;
+  }
+  &__img{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+  }
+  &__city{
+    color: #282828;
+    flex: 1 1 15%;
+    position: relative;
+    cursor: pointer;
+  }
+  &__cityItem{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+  }
+  &__subCity{
+    position: absolute;
+    background: #fff;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    box-sizing:border-box;
+  }
+  &__subCityItem{
+    display: block;
+    flex: 1 1 10%;
+    padding: 10px 5px 10px 35px;
+    &:hover{
+      color: #fff;
+      background: #3d5ed8;
+    }
+  }
+  &__btn{
+    background: #3d5ed8;
+    flex: 1 1 15%;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0;
+  }
+}
+
+
+
+
+
+ /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  
+
+
+}
+
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  
+
+
+}
+
+
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.form{
+  margin: 30px 0 0 0;
+  &__container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__block{
+    margin: 0 10px 10px 0;
+  }
+  &__search{
+    flex: 1 1 60%;
+  }
+  &__date{
+    flex: 1 1 20%;
+  }
+  &__city{
+    flex: 1 1 60%;
+  }
+  &__cityItem{
+    font-size: 16px;
+  }
+  &__subCityItem{
+    padding: 7px 5px 7px 35px;
+  }
+  &__btn{
+    flex: 1 1 20%;
+    font-size: 14px;
+  }
+}
+
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.form{
+  margin: 20px 0 0 0;
+  &__container{
+    justify-ontent: space-between;
+    flex-wrap: wrap;
+  }
+  &__block{
+    margin: 5px 0;
+    padding: 10px;
+  }
+  &__search{
+    flex: 0 0 100%;
+  }
+  &__date{
+    flex: 0 0 100%;
+  }
+  &__city{
+    flex: 0 0 100%;
+  }
+  &__cityItem{
+    font-size: 16px;
+  }
+  &__subCityItem{
+    padding: 7px 5px 7px 25px;
+  }
+  &__btn{
+    flex: 0 0 100%;
+  }
+}
+
+  
+
+}
+
+
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+
+
+}
+
+
+
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+
+
+
+}
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+
+
+}
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+
+
+}
+
+
+
+
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+
+
+}

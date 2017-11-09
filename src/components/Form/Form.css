@@ -1,0 +1,111 @@
+.form {
+  margin: 30px 0 0 0; }
+  .form__container {
+    justify-content: space-between; }
+  .form__block {
+    font-family: 'Roboto';
+    display: block;
+    padding: 10px 15px;
+    background: #fff;
+    margin: 0 10px 0 0;
+    box-sizing: border-box; }
+  .form__search {
+    flex: 1 1 40%;
+    border: none; }
+  .form__date {
+    color: #808080;
+    font-size: 12px;
+    flex: 1 1 8%;
+    cursor: pointer; }
+  .form__img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px 0 0; }
+  .form__city {
+    color: #282828;
+    flex: 1 1 15%;
+    position: relative;
+    cursor: pointer; }
+  .form__cityItem {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px; }
+  .form__subCity {
+    position: absolute;
+    background: #fff;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    box-sizing: border-box; }
+  .form__subCityItem {
+    display: block;
+    flex: 1 1 10%;
+    padding: 10px 5px 10px 35px; }
+    .form__subCityItem:hover {
+      color: #fff;
+      background: #3d5ed8; }
+  .form__btn {
+    background: #3d5ed8;
+    flex: 1 1 15%;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0; }
+
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .form {
+    margin: 30px 0 0 0; }
+    .form__container {
+      justify-content: space-between;
+      flex-wrap: wrap; }
+    .form__block {
+      margin: 0 10px 10px 0; }
+    .form__search {
+      flex: 1 1 60%; }
+    .form__date {
+      flex: 1 1 20%; }
+    .form__city {
+      flex: 1 1 60%; }
+    .form__cityItem {
+      font-size: 16px; }
+    .form__subCityItem {
+      padding: 7px 5px 7px 35px; }
+    .form__btn {
+      flex: 1 1 20%;
+      font-size: 14px; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .form {
+    margin: 20px 0 0 0; }
+    .form__container {
+      justify-ontent: space-between;
+      flex-wrap: wrap; }
+    .form__block {
+      margin: 5px 0;
+      padding: 10px; }
+    .form__search {
+      flex: 0 0 100%; }
+    .form__date {
+      flex: 0 0 100%; }
+    .form__city {
+      flex: 0 0 100%; }
+    .form__cityItem {
+      font-size: 16px; }
+    .form__subCityItem {
+      padding: 7px 5px 7px 25px; }
+    .form__btn {
+      flex: 0 0 100%; } }
+
+/* Custom, iPhone Retina */
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
