@@ -6,7 +6,8 @@
 
 .header {
   padding: 65px 0 0 0;
-  color: #fff; }
+  color: #fff;
+  flex-grow: 0; }
   .header__container {
     justify-content: space-between;
     align-items: center; }

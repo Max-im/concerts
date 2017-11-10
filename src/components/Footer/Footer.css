@@ -1,5 +1,6 @@
 .footer {
-  margin: 60px 0; }
+  margin: 60px 0;
+  flex-grow: 0; }
   .footer__container {
     border-top: 1px solid rgba(255, 255, 255, 0.25);
     justify-content: space-between; }

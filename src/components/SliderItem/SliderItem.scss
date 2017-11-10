@@ -3,8 +3,6 @@ $accentCircle: #ff3546;
 
 
 .main{
-  flex-grow: 1;
-  min-height: 600px;
   &__img{
     width: 100%;
     border-radius: 50%;
@@ -14,8 +12,6 @@ $accentCircle: #ff3546;
     border-radius: 50%;
     position: relative;
     cursor: pointer;
-    flex-shrink: 0;
-    margin: auto;
     &:hover{
       .main__name{
         transition: all .3s;
@@ -144,80 +140,5 @@ $accentCircle: #ff3546;
     text-align: center;
     padding: 70px 0 0 0;
     opacity: 0;
-  }
-  &__slider{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-
-  }
-  &__element{
-    margin: auto;
-    &_2{
-      position: absolute;
-    }
-    &_3{
-      position: absolute;
-    }
-    &_4{
-      position: absolute;
-    }
-    &:nth-child(1){
-      left: 0;
-      top: 80%;
-    }
-    &:nth-child(2){
-      left: 15%;
-      top: 30%;
-    }
-    &:nth-child(3){
-      left: 30%;
-      top: 70%;
-    }
-    &:nth-child(4){
-      left: 25%;
-      top: 20%;
-    }
-    &:nth-child(5){
-      left: 0%;
-      top: 10%;
-    }
-    &:nth-child(6){
-      left: 10%;
-      top: 50%;
-    }
-    &:nth-child(8){
-      right: 0%;
-      top: 50%;
-    }
-    &:nth-child(9){
-      right: 15%;
-      top: 15%;
-    }
-    &:nth-child(10){
-      right: 3%;
-      top: 5%;
-    }
-    &:nth-child(11){
-      right: 25%;
-      top: 70%;
-    }
-    &:nth-child(12){
-      right: 18%;
-      top: 70%;
-    }
-    &:nth-child(13){
-      right: 32%;
-      top: 10%;
-    }
-    &:nth-child(14){
-      right: 30%;
-      top: 40%;
-    }
-  }
-  &__sliderList{
-    height: 100%;
-    display: flex;
   }
 }

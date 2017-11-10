@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Main.css';
+import SliderItem from '../SliderItem/SliderItem';
 
 import size1 from '../../assets/img/euro.jpg';
 import size21 from '../../assets/img/concert1.jpg';
@@ -150,35 +151,11 @@ class Main extends Component {
   }
 
   render() {
-    const renderList = this.state.concerts.map( i => 
-      <li
-        key={i.id} 
-        className={'main__size main__size'+i.size}>
-        
-        <img 
-          src={i.img} 
-          alt="concert" 
-          className={i.size === 4 ? "hide" : "main__img"}/>
-
-        <div className={"main__dateInfo main__dateInfo_"+i.size }>
-          <p className={"main__date main__date_"+i.size}> {i.date }</p>
-          <p className={"main__month main__month_"+i.size}> {i.month }</p>
-        </div>
-
-        <h3 
-          className={i.size === 4 ? "hide" : "main__title"}>
-          { i.type }
-        </h3>
-        
-        <h4 className={"main__name main__name_"+i.size}>{ i.name }</h4>
-          
-      </li>
-    )
     return (
       <main className="main">
-          <ul>
-            { renderList }
-          </ul>
+        <div className="main__slider">
+          <SliderItem concerts={this.state.concerts} />
+        </div>
       </main>
     );
   }
