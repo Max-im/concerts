@@ -5,7 +5,8 @@ import { Link } from 'react-router';
 import data from '../../assets/db/mainDb';
 
 const Single = (props) => {
-  const obj = (data.filter( i => {
+  const index = 0;
+  const obj = (data[index].filter( i => {
     return i.id === +props.params.id
   }))[0];
 

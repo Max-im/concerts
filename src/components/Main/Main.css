@@ -1,7 +1,8 @@
 .main {
   flex-grow: 1;
   min-height: 600px;
-  margin: 30px 0; }
+  margin: 30px 0;
+  overflow: hidden; }
   .main__img {
     width: 100%;
     border-radius: 50%; }
@@ -24,8 +25,7 @@
         opacity: 1; }
   .main__size1 {
     width: 390px;
-    height: 390px;
-    background: red; }
+    height: 390px; }
   .main__size2 {
     width: 250px;
     height: 250px; }
@@ -118,11 +118,6 @@
     text-align: center;
     padding: 70px 0 0 0;
     opacity: 0; }
-  .main__slider {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative; }
   .main__element {
     margin: auto; }
     .main__element:hover {
@@ -172,9 +167,59 @@
     .main__element:nth-child(14) {
       left: 12%;
       top: 70%; }
+  .main__slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    left: 0;
+    transition: all .8s ease-out; }
   .main__sliderList {
     height: 100%;
-    display: flex; }
+    display: flex;
+    flex: 0 0 100%;
+    position: relative; }
+  .main__sliderControll {
+    position: absolute;
+    left: -100%;
+    right: -100%;
+    height: 100%;
+    top: 0; }
+  .main__chevron {
+    opacity: .5;
+    transition: all .3s;
+    z-index: 10;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border-radius: 50%; }
+    .main__chevron:hover {
+      opacity: .7;
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.6); }
+    .main__chevron_swich {
+      transform: rotate(180deg);
+      left: 0; }
+  .main__add {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #7990e3;
+    color: #7990e3;
+    background: #fff;
+    display: block;
+    font-family: 'Roboto';
+    font-size: 14px;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    right: 0;
+    bottom: 10%;
+    cursor: pointer;
+    z-index: 10; }
+  .main__addImg {
+    width: 60%; }
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1500px) {
@@ -385,7 +430,14 @@
       top: 80%; }
     .main__element:nth-child(14) {
       left: 12%;
-      top: 75%; } }
+      top: 75%; }
+    .main__add {
+      width: 70px;
+      height: 70px;
+      font-size: 10px;
+      padding: 5px; }
+    .main__addImg {
+      width: 55%; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
