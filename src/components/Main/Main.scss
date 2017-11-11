@@ -1,10 +1,109 @@
+// colors
 $accentBtn: #ee7a30;
 $accentCircle: #ff3546;
+
+
+// size XL
+$size1xl: 390px;
+$size2xl: 250px;
+$size3xl: 170px;
+$size4xl: 110px;
+
+$date1xl: 105px;
+$date2xl: 50px;
+$date3xl: 45px;
+
+$dateP1xl: 35px 0 0 0;
+$dateP2xl: 10px 0 0 0;
+$dateP3xl: 10px 0 0 0;
+$dateP4xl: 30px 0 0 0;
+
+$dateF1xl: 37px;
+$dateF2xl: 17px;
+$dateF3xl: 17px;
+$dateF4xl: 37px;
+
+$dateH1xl: 30px;
+$dateH2xl: 12px;
+$dateH3xl: 12px;
+$dateH4xl: 30px;
+
+$monthF1xl: 17px;
+$monthF2xl: 10px;
+$monthF3xl: 10px;
+$monthF4xl: 17px;
+
+
+
+// size L
+$size1l: 300px;
+$size2l: 200px;
+$size3l: 120px;
+$size4l: 80px;
+
+$date1l: 70px;
+$date2l: 40px;
+$date3l: 40px;
+
+$dateP1l: 15px 0 0 0;
+$dateP2l: 10px 0 0 0;
+$dateP3l: 10px 0 0 0;
+$dateP4l: 15px 0 0 0;
+
+$dateF1l: 22px;
+$dateF2l: 12px;
+$dateF3l: 12px;
+$dateF4l: 22px;
+
+$dateH1l: 20px;
+$dateH2l: 10px;
+$dateH3l: 10px;
+$dateH4l: 20px;
+
+$monthF1l: 17px;
+$monthF2l: 10px;
+$monthF3l: 10px;
+$monthF4l: 17px;
+
+
+
+// size
+$size1: 200px;
+$size2: 130px;
+$size3: 80px;
+$size4: 60px;
+
+$date1: 60px;
+$date2: 30px;
+$date3: 30px;
+
+$dateP1: 15px 0 0 0;
+$dateP2: 5px 0 0 0;
+$dateP3: 5px 0 0 0;
+$dateP4: 10px 0 0 0;
+
+$dateF1: 18px;
+$dateF2: 12px;
+$dateF3: 12px;
+$dateF4: 18px;
+
+$dateH1: 16px;
+$dateH2: 8px;
+$dateH3: 8px;
+$dateH4: 16px;
+
+$monthF1: 14px;
+$monthF2: 8px;
+$monthF3: 8px;
+$monthF4: 14px;
+
+
 
 
 .main{
   flex-grow: 1;
   min-height: 600px;
+  margin: 30px 0;
   &__img{
     width: 100%;
     border-radius: 50%;
@@ -17,6 +116,10 @@ $accentCircle: #ff3546;
     flex-shrink: 0;
     margin: auto;
     &:hover{
+      box-shadow: 0 0 10px rgba(255,255,255,.8);
+      .main__dateInfo{
+        box-shadow: 0 0 10px rgba(255,255,255,.8);
+      }
       .main__name{
         transition: all .3s;
         opacity: 1;
@@ -28,20 +131,21 @@ $accentCircle: #ff3546;
     }
   }
   &__size1{
-    width: 390px;
-    height: 390px;
+    width: $size1xl;
+    height: $size1xl;
+    background: red;
   }
   &__size2{
-    width: 250px;
-    height: 250px;
+    width: $size2xl;
+    height: $size2xl;
   }
   &__size3{
-    width: 170px;
-    height: 170px;
+    width: $size3xl;
+    height: $size3xl;
   }
   &__size4{
-    width: 110px;
-    height: 110px;
+    width: $size4xl;
+    height: $size4xl;
     background: $accentCircle;
   }
 
@@ -52,16 +156,16 @@ $accentCircle: #ff3546;
     text-align: center;
     border-radius: 50%;
     &_1{
-      width: 105px;
-      height: 105px;
+      width: $date1xl;
+      height: $date1xl;
     }
     &_2{
-      width: 50px;
-      height: 50px;
+      width: $date2xl;
+      height: $date2xl;
     }
     &_3{
-      width: 45px;
-      height: 45px;
+      width: $date3xl;
+      height: $date3xl;
     }
     &_4{
       background: none;
@@ -73,24 +177,24 @@ $accentCircle: #ff3546;
     font-family: "UA";
     font-weight: bold;
     &_1{
-      padding: 35px 0 0 0;
-      font-size: 37px;
-      line-height: 30px;
+      padding: $dateP1xl;
+      font-size: $dateF1xl;
+      line-height: $dateH1xl;
     }
     &_2{
-      padding: 10px 0 0 0;
-      font-size: 17px;
-      line-height: 15px; 
+      padding: $dateP2xl;
+      font-size: $dateF2xl;
+      line-height: $dateH2xl;
     }
     &_3{
-      padding: 10px 0 0 0;
-      font-size: 17px;
-      line-height: 15px; 
+      padding: $dateP3xl;
+      font-size: $dateF3xl;
+      line-height: $dateH3xl;
     }
     &_4{
-      padding: 30px 0 0 0;
-      font-size: 37px;
-      line-height: 30px;
+      padding: $dateP4xl;
+      font-size: $dateF4xl;
+      line-height: $dateH4xl;
 
     }
   }
@@ -98,16 +202,16 @@ $accentCircle: #ff3546;
     font-family: "UA";
     font-weight: bold;
     &_1{
-      font-size: 17px;
+      font-size: $monthF1xl;
     }
     &_2{
-      font-size: 10px;
+      font-size: $monthF2xl;
     }
     &_3{
-      font-size: 10px;
+      font-size: $monthF3xl;
     }
     &_4{
-      font-size: 17px;
+      font-size: $monthF4xl;
     }
   }
   &__title{
@@ -154,6 +258,9 @@ $accentCircle: #ff3546;
   }
   &__element{
     margin: auto;
+    &:hover{
+      z-index: 1;
+    }
     &_2{
       position: absolute;
     }
@@ -163,61 +270,472 @@ $accentCircle: #ff3546;
     &_4{
       position: absolute;
     }
-    &:nth-child(1){
-      left: 0;
-      top: 80%;
-    }
     &:nth-child(2){
-      left: 15%;
-      top: 30%;
-    }
-    &:nth-child(3){
-      left: 30%;
-      top: 70%;
-    }
-    &:nth-child(4){
-      left: 25%;
+      left: 5%;
       top: 20%;
     }
-    &:nth-child(5){
-      left: 0%;
-      top: 10%;
-    }
-    &:nth-child(6){
-      left: 10%;
+    &:nth-child(3){
+      left: 20%;
       top: 50%;
     }
-    &:nth-child(8){
-      right: 0%;
-      top: 50%;
-    }
-    &:nth-child(9){
-      right: 15%;
+    &:nth-child(4){
+      right: 20%;
       top: 15%;
     }
+    &:nth-child(5){
+      right: 10%;
+      top: 50%;
+    }
+    &:nth-child(6){
+      left: 0%;
+      top: 65%;
+    }
+    &:nth-child(7){
+      left: 25%;
+      top: 10%;
+    }
+    &:nth-child(8){
+      right: 5%;
+      top: 15%;
+    }
+    &:nth-child(9){
+      right: 30%;
+      top: 65%;
+    }
     &:nth-child(10){
-      right: 3%;
+      left: 0%;
       top: 5%;
     }
     &:nth-child(11){
-      right: 25%;
-      top: 70%;
+      right: 5%;
+      top: 75%;
     }
     &:nth-child(12){
-      right: 18%;
-      top: 70%;
+      right: 0%;
+      top: 40%;
     }
     &:nth-child(13){
-      right: 32%;
+      right: 38%;
       top: 10%;
     }
     &:nth-child(14){
-      right: 30%;
-      top: 40%;
+      left: 12%;
+      top: 70%;
     }
   }
   &__sliderList{
     height: 100%;
     display: flex;
   }
+}
+
+
+
+ /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1500px) {
+.main{
+  margin: 30px 0;
+  &__size1{
+    width: $size1l;
+    height: $size1l;
+  }
+  &__size2{
+    width: $size2l;
+    height: $size2l;
+  }
+  &__size3{
+    width: $size3l;
+    height: $size3l;
+  }
+  &__size4{
+    width: $size4l;
+    height: $size4l;
+    background: $accentCircle;
+  }
+
+  &__dateInfo{
+    position: absolute;
+    background: $accentCircle;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    &_1{
+      width: $date1l;
+      height: $date1l;
+    }
+    &_2{
+      width: $date2l;
+      height: $date2l;
+    }
+    &_3{
+      width: $date3l;
+      height: $date3l;
+    }
+    &_4{
+      background: none;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__date{
+    &_1{
+      padding: $dateP1l;
+      font-size: $dateF1l;
+      line-height: $dateH1l;
+    }
+    &_2{
+      padding: $dateP2l;
+      font-size: $dateF2l;
+      line-height: $dateH2l;
+    }
+    &_3{
+      padding: $dateP3l;
+      font-size: $dateF3l;
+      line-height: $dateH3l;
+    }
+    &_4{
+      padding: $dateP4l;
+      font-size: $dateF4l;
+      line-height: $dateH4l;
+
+    }
+  }
+  &__month{
+    font-family: "UA";
+    font-weight: bold;
+    &_1{
+      font-size: $monthF1l;
+    }
+    &_2{
+      font-size: $monthF2l;
+    }
+    &_3{
+      font-size: $monthF3l;
+    }
+    &_4{
+      font-size: $monthF4l;
+    }
+  }
+}
+
+
+
+}
+
+
+ /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+.main{
+  margin: 30px 0;
+  &__size1{
+    width: $size1;
+    height: $size1;
+  }
+  &__size2{
+    width: $size2;
+    height: $size2;
+  }
+  &__size3{
+    width: $size3;
+    height: $size3;
+  }
+  &__size4{
+    width: $size4;
+    height: $size4;
+    background: $accentCircle;
+  }
+
+  &__dateInfo{
+    &_1{
+      width: $date1;
+      height: $date1;
+    }
+    &_2{
+      width: $date2;
+      height: $date2;
+    }
+    &_3{
+      width: $date3;
+      height: $date3;
+    }
+  }
+  &__date{
+    font-family: "UA";
+    font-weight: normal;
+    &_1{
+      padding: $dateP1;
+      font-size: $dateF1;
+      line-height: $dateH1;
+    }
+    &_2{
+      padding: $dateP2;
+      font-size: $dateF2;
+      line-height: $dateH2;
+    }
+    &_3{
+      padding: $dateP3;
+      font-size: $dateF3;
+      line-height: $dateH3;
+    }
+    &_4{
+      padding: $dateP4;
+      font-size: $dateF4;
+      line-height: $dateH4;
+
+    }
+  }
+  &__month{
+    font-family: "UA";
+    font-weight: normal;
+    &_1{
+      font-size: $monthF1;
+    }
+    &_2{
+      font-size: $monthF2;
+    }
+    &_3{
+      font-size: $monthF3;
+    }
+    &_4{
+      font-size: $monthF4;
+    }
+  }
+  &__name{
+    font-weight: normal;
+    height: 15px;
+    font-size: 12px;
+    text-align: center;
+    padding: 30px 0 0 0;
+  }
+  &__element{
+    &:nth-child(2){
+      left: 5%;
+      top: 20%;
+    }
+    &:nth-child(3){
+      left: 20%;
+      top: 50%;
+    }
+    &:nth-child(4){
+      right: 20%;
+      top: 15%;
+    }
+    &:nth-child(5){
+      right: 10%;
+      top: 50%;
+    }
+    &:nth-child(6){
+      left: 0%;
+      top: 65%;
+    }
+    &:nth-child(7){
+      left: 25%;
+      top: 10%;
+    }
+    &:nth-child(8){
+      right: 5%;
+      top: 15%;
+    }
+    &:nth-child(9){
+      right: 30%;
+      top: 65%;
+    }
+    &:nth-child(10){
+      left: 0%;
+      top: 5%;
+    }
+    &:nth-child(11){
+      right: 5%;
+      top: 75%;
+    }
+    &:nth-child(12){
+      right: 0%;
+      top: 40%;
+    }
+    &:nth-child(13){
+      right: 38%;
+      top: 10%;
+    }
+    &:nth-child(14){
+      left: 12%;
+      top: 70%;
+    }
+  }
+}
+
+
+
+}
+
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  
+
+
+}
+
+
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.main{
+  margin: 30px 0;
+  &__element{
+    &:nth-child(2){
+      left: 5%;
+      top: 0%;
+    }
+    &:nth-child(3){
+      left: 10%;
+      top: 50%;
+    }
+    &:nth-child(4){
+      right: 20%;
+      top: 5%;
+    }
+    &:nth-child(5){
+      right: 10%;
+      top: 70%;
+    }
+    &:nth-child(6){
+      left: 30%;
+      top: 75%;
+    }
+    &:nth-child(7){
+      left: 30%;
+      top: 10%;
+    }
+    &:nth-child(8){
+      right: 5%;
+      top: 20%;
+    }
+    &:nth-child(9){
+      right: 15%;
+      top: 50%;
+    }
+    &:nth-child(10){
+      left: 6%;
+      top: 35%;
+    }
+    &:nth-child(11){
+      right: 5%;
+      top: 55%;
+    }
+    &:nth-child(12){
+      right: 3%;
+      top: 40%;
+    }
+    &:nth-child(13){
+      right: 40%;
+      top: 80%;
+    }
+    &:nth-child(14){
+      left: 12%;
+      top: 75%;
+    }
+  }
+}
+
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.main{
+  &__sliderList{
+    display: flex;
+    flex-wrap: wrap;
+  }  
+  &__element{
+    position: static;
+    flex: 1 1 100%;
+    margin: 5px 0;
+    &_2{
+      flex: 1 1 50%;
+    }
+    &_3{
+      flex: 1 1 50%;
+    }
+    &_4{
+      flex: 1 1 calc(100% / 3);
+    }
+  }
+}
+
+  
+
+}
+
+
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+
+
+}
+
+
+
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+
+
+
+}
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+
+
+}
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+
+
+}
+
+
+
+
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+
+
 }

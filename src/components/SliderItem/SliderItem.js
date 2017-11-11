@@ -5,23 +5,13 @@ import './SliderItem.css';
 
 
 const SliderItem = ({concerts}) => {
-  const sortedArr = [];
-
-  // sort all the links
-  concerts.sort((a, b) => {
+  const sortedArr = concerts.sort((a, b) => {
     return a.size - b.size;
-  }).map((item, i) => {
-    if( i%2 !== 0 ){
-      sortedArr.push(item);
-    }
-    else{
-      sortedArr.unshift(item);
-    }
   });
 
 
   const renderList = sortedArr.map( i => 
-    <Link key={i.id} to={"/single"+i.id} className={"main__element main__element_"+i.size}>
+    <Link key={i.id} to={"id/"+i.id} className={"main__element main__element_"+i.size}>
       <li
          
         className={'main__size main__size'+i.size}>

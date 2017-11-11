@@ -40,9 +40,7 @@
 ## __Technologies:__
 - react-cli ![cli][cliImg];
  - React ![react][reactImg] / ES6 ![ES6][ES6Img];
- - jQuery ![jQuery][jQueryImg];
  - HTML5 ![HTML][HTMLImg] / BEM ![bem][bemImg] / OpenGraph ![openGraph][openGraphImg] / Schema ![schema][schemaImg];
- - Bootstrap ![bootstrap][bootstrapImg];
  - Sass (Scss) ![sass][sassImg] / CSS3 ![CSS3][cssImg];
 
 
@@ -51,17 +49,17 @@
 ## __Schedule:__
 | Num   | Action                                                    | Hours |
 | ----: | --------------------------------------------------------  | ----: |
-| 1.    | Consider the project, create repo, license, readme.md     | 1     |
-| 1.    | Environment init, structure the project                   | 1     |
-| 1.    | Prepare assets for the projects                           | 1     |
-| 1.    | Create Header component                                   | 4     |
-| 1.    | Create Form component                                     | 4     |
-| 1.    | Create Main component                                     | 4     |
-| 1.    | Create Footer component                                   | 4     |
-| 1.    | Code review, refactoring                                  | 4     |
-| 1.    | Add microdata, correct readme                             | 2     |
-| 1.    | Deploy                                                    | 1     |
-| 1.    | Verify [speed]                                            | 1     |
+| 1.    | Consider the project, create repo, readme.md              | 0.5     |
+| 2.    | Environment init, structure the project                   | 0.5     |
+| 3.    | Prepare assets for the projects                           | 1     |
+| 4.    | Create Header component                                   | 1     |
+| 5.    | Create Form component                                     | 4     |
+| 6.    | Create Main component                                     | 4     |
+| 7.    | Create Footer component                                   | 1     |
+| 8.    | Code review, refactoring                                  | 4     |
+| 9.    | Add microdata, correct readme                             | 1     |
+| 10.    | Deploy                                                    | 1     |
+| 11.    | Verify [speed]                                            | 1     |
 |       | TOTAL                                                     | 1000  |
 
 
