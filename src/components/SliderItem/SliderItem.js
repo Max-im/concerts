@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 
 import './SliderItem.css';
-
+ 
 
 const SliderItem = ({concerts}) => {
   const sortedArr = concerts.sort((a, b) => {
