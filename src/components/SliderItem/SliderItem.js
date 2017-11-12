@@ -4,14 +4,14 @@ import { Link } from 'react-router';
 import './SliderItem.css';
  
 
-const SliderItem = ({concerts}) => {
+const SliderItem = ({concerts, current}) => {
   const sortedArr = concerts.sort((a, b) => {
     return a.size - b.size;
   });
 
 
   const renderList = sortedArr.map( i => 
-    <Link key={i.id} to={"id/"+i.id} className={"main__element main__element_"+i.size}>
+    <Link key={i.id} to={"id/"+i.id+'/'+current} className={"main__element main__element_"+i.size}>
       <li
          
         className={'main__size main__size'+i.size}>

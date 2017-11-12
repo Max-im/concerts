@@ -16,7 +16,6 @@ class Main extends Component {
       concerts4: [],
       concerts5: [],
       concerts6: [],
-      current: 0
     }
   }
 
@@ -29,51 +28,43 @@ class Main extends Component {
       concerts5: data[4],
       concerts6: data[5],
     })
-    const sliderEl = this.refs.slider;
-    sliderEl.style.left = this.state.current * -100 + '%';
-  }
-  componentWillUpdate(){
-     const sliderEl = this.refs.slider;
-    sliderEl.style.left = this.state.current * -100 + '%';
-  }
-
-
-  leftSwitch = () => {
-    if( this.state.current > 0 ){
-      this.setState({current: --this.state.current})
-    }
-  }
-
-
-  rightSwitch = () => {
-    if( this.state.current < data.length-1 ){
-      this.setState({current: ++this.state.current})
-    }
   }
 
   render() {
     return (
       <main className="main">
-        <div className="main__slider" ref="slider">
-          <SliderItem concerts={this.state.concerts} />
-          <SliderItem concerts={this.state.concerts2} />
-          <SliderItem concerts={this.state.concerts3} />
-          <SliderItem concerts={this.state.concerts4} />
-          <SliderItem concerts={this.state.concerts5} />
-          <SliderItem concerts={this.state.concerts6} />
+        <div className="main__slider">
+          <SliderItem 
+            current={this.props.current}
+            concerts={this.state.concerts} />
+          <SliderItem 
+            current={this.props.current}
+            concerts={this.state.concerts2} />
+          <SliderItem 
+            current={this.props.current}
+            concerts={this.state.concerts3} />
+          <SliderItem 
+            current={this.props.current}
+            concerts={this.state.concerts4} />
+          <SliderItem 
+            current={this.props.current}
+            concerts={this.state.concerts5} />
+          <SliderItem 
+            current={this.props.current}
+            concerts={this.state.concerts6} />
 
         </div>
         <div className="container main__sliderControll">
           <img 
             src={chevron}
             alt="chevron"
-            onClick={this.leftSwitch}
+            onClick={this.props.sliderControll.bind(this, this.props.current -1)}
             className="main__chevron main__chevron_swich" />
           
           <img 
             src={chevron}
             alt="chevron"
-            onClick={this.rightSwitch}
+            onClick={this.props.sliderControll.bind(this, this.props.current +1)}
             className="main__chevron" />
           
           <a className="main__add">

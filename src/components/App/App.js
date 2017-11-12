@@ -14,45 +14,66 @@ class App extends Component {
       monthList : [
         {
           name:'январь',
-          active: true
+          active: true,
         }, 
         {
           name:'февраль',
-          active: false
+          active: false,
         }, 
         {
           name:'март',
-          active: false
+          active: false,
         }, 
         {
           name:'апрель',
-          active: false
+          active: false,
         },
         {
           name:'май',
-          active: false
+          active: false,
         }, 
         {
           name:'июнь',
-          active: false
+          active: false,
         }
-      ]
+      ],
+      current: 0
     }
   }
 
+  componentDidUpdate(){
+    const sliderEl = document.querySelector('.main__slider');
+    sliderEl.style.left = this.state.current * -100 + '%';
+  }
+
+
   changeActiveMonth = (e) => {
     const newMonthState = [];
-    this.state.monthList.map(i => {
+    let cur = 0;
+    this.state.monthList.map((i, index) => {
       if(i.name === e){
         newMonthState.push({name: e, active: true});
+        cur = index;
       }
       else{
         newMonthState.push({name: i.name, active: false});
       }
       return null;
     });
-    this.setState({ monthList: newMonthState })
+    this.setState({ 
+      current: cur,
+      monthList: newMonthState,
+    })
   }
+
+
+  sliderControll = (e) => {
+    if(e >= 0 && e < 6 ){
+      this.setState({current: e})
+    }
+  }
+
+
 
 
   render() {
@@ -60,7 +81,9 @@ class App extends Component {
       <div className="appWrap">
         <Header />
         <Form />
-        <Main />
+        <Main 
+          current={this.state.current}
+          sliderControll={this.sliderControll} /> 
         <Footer
           changeActiveMonth = {this.changeActiveMonth} 
           data={this.state.monthList} />
