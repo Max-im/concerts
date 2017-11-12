@@ -2,7 +2,8 @@
   flex-grow: 1;
   min-height: 600px;
   margin: 30px 0;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
   .main__img {
     width: 100%;
     border-radius: 50%; }
@@ -191,7 +192,7 @@
     z-index: 10;
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: 0;
     border-radius: 50%; }
     .main__chevron:hover {
