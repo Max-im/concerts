@@ -38,9 +38,10 @@
 
 
 ## __Technologies:__
-- react-cli ![cli][cliImg];
+ - react-cli ![cli][cliImg];
+ - Router;
  - React ![react][reactImg] / ES6 ![ES6][ES6Img];
- - HTML5 ![HTML][HTMLImg] / BEM ![bem][bemImg] / OpenGraph ![openGraph][openGraphImg] / Schema ![schema][schemaImg];
+ - HTML5 ![HTML][HTMLImg] / BEM ![bem][bemImg] / OpenGraph ![openGraph][openGraphImg];
  - Sass (Scss) ![sass][sassImg] / CSS3 ![CSS3][cssImg];
 
 
@@ -53,14 +54,13 @@
 | 2.    | Environment init, structure the project                   | 0.5     |
 | 3.    | Prepare assets for the projects                           | 1     |
 | 4.    | Create Header component                                   | 1     |
-| 5.    | Create Form component                                     | 4     |
-| 6.    | Create Main component                                     | 4     |
+| 5.    | Create Form component                                     | 2    |
+| 6.    | Create Main component                                     | 7     |
 | 7.    | Create Footer component                                   | 1     |
-| 8.    | Code review, refactoring                                  | 4     |
-| 9.    | Add microdata, correct readme                             | 1     |
-| 10.    | Deploy                                                    | 1     |
-| 11.    | Verify [speed]                                            | 1     |
-|       | TOTAL                                                     | 1000  |
+| 8.    | Code review, refactoring                                  | 2     |
+| 9.    | Add microdata, correct readme                             | 0.5     |
+| 10.    | Deploy                                                    | 0.5     |
+|       | TOTAL                                                     | 16  |
 
 
 

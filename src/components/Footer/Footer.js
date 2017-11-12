@@ -3,12 +3,21 @@ import './Footer.css';
 
 
 
-const Footer = ({ data, changeActiveMonth }) => {
-  const renderList = data.map( i => 
+const Footer = ({ changeActiveMonth, current }) => {
+  const monthList = [
+        { name:'январь' }, 
+        { name:'февраль' }, 
+        { name:'март' }, 
+        { name:'апрель' },
+        { name:'май' }, 
+        { name:'июнь' }
+      ];
+
+  const renderList = monthList.map( (i, index) => 
     <li 
       key={i.name} 
-      onClick={changeActiveMonth.bind(this, i.name)}
-      className={i.active ? "footer__item footer__item_active" : "footer__item"}>
+      onClick={changeActiveMonth.bind(this, index)}
+      className={index === current ? "footer__item footer__item_active" : "footer__item"}>
       {i.name}
     </li>
   )

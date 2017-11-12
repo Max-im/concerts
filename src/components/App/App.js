@@ -7,36 +7,11 @@ import Main from '../Main/Main';
 import Footer from '../Footer/Footer';
 
 
+
 class App extends Component {
  constructor(props) {
     super(props);
     this.state = {
-      monthList : [
-        {
-          name:'январь',
-          active: true,
-        }, 
-        {
-          name:'февраль',
-          active: false,
-        }, 
-        {
-          name:'март',
-          active: false,
-        }, 
-        {
-          name:'апрель',
-          active: false,
-        },
-        {
-          name:'май',
-          active: false,
-        }, 
-        {
-          name:'июнь',
-          active: false,
-        }
-      ],
       current: 0
     }
   }
@@ -46,25 +21,6 @@ class App extends Component {
     sliderEl.style.left = this.state.current * -100 + '%';
   }
 
-
-  changeActiveMonth = (e) => {
-    const newMonthState = [];
-    let cur = 0;
-    this.state.monthList.map((i, index) => {
-      if(i.name === e){
-        newMonthState.push({name: e, active: true});
-        cur = index;
-      }
-      else{
-        newMonthState.push({name: i.name, active: false});
-      }
-      return null;
-    });
-    this.setState({ 
-      current: cur,
-      monthList: newMonthState,
-    })
-  }
 
 
   sliderControll = (e) => {
@@ -85,7 +41,8 @@ class App extends Component {
           current={this.state.current}
           sliderControll={this.sliderControll} /> 
         <Footer
-          changeActiveMonth = {this.changeActiveMonth} 
+          changeActiveMonth = {this.sliderControll} 
+          current={this.state.current}
           data={this.state.monthList} />
       </div>
     );

@@ -17,8 +17,7 @@ class Form extends Component {
     }
   }
 
-  cityPick = () => {
-    this.setState({ cityMenuShow: !this.state.cityMenuShow })
+  cityPick = () => {    this.setState({ cityMenuShow: !this.state.cityMenuShow })
   }
 
   chooseItem = (e) => {
